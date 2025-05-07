@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Confortevole e di Qualità - curated by Zhiem</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Background tanpa blur */
+    .bg-full {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('game.jpeg');
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #ffffff;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    header {
+      background: rgba(45, 1, 77, 0.85);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.7rem;
+      color: #c2a4ff;
+      font-weight: 600;
+    }
+
+    .logo-img {
+      height: 40px;
+      width: 40px;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #aaaaff;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    select {
+      margin-left: 1rem;
+      padding: 0.3rem;
+      border-radius: 5px;
+      border: none;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .hero {
+      background: rgba(30, 0, 51, 0.6);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      color: #f0d8ff;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: #e0d2ff;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 2rem;
+      background: #6a0dad;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background: #8b3dff;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .card {
+      background-color: rgba(26, 0, 41, 0.85);
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h3 {
+      color: #d6b3ff;
+    }
+
+    .card p {
+      color: #d3c1ff;
+    }
+
+    .card i {
+      margin-right: 8px;
+      color: #f7d1ff;
+    }
+
+    footer {
+      background-color: rgba(45, 1, 77, 0.85);
+      text-align: center;
+      padding: 1rem;
+      color: #aaaaff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Gambar latar belakang fullscreen -->
+  <div class="bg-full"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="logo.jpeg" alt="Logo" class="logo-img" />
+      Zhestore
+    </div>
+    <nav>
+      <a href="#services" id="navServices">Layanan</a>
+      <a href="#contact" id="navContact">Kontak</a>
+      <select id="languageSelect">
+        <option value="id">🇮🇩 ID</option>
+        <option value="en">🇺🇸 EN</option>
+        <option value="fr">🇫🇷 FR</option>
+        <option value="es">🇪🇸 ES</option>
+        <option value="de">🇩🇪 DE</option>
+      </select>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2 id="heroTitle">Jasa Digital Murah & Berkualitas</h2>
+    <p id="heroDesc">Top Up E-Wallet, Pulsa, Game Mobile, dan Akun Premium | curated by Zhiem</p>
+    <a href="https://wa.me/6288246306711" class="cta-button" id="ctaButton">Pesan via WhatsApp</a>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <div class="card">
+      <h3><i class="fa fa-wallet"></i><span id="service1Title">Top Up E-Wallet</span></h3>
+      <p id="service1Desc">Dapatkan saldo GoPay, OVO, Dana, dan lainnya dengan harga bersaing.</p>
+    </div>
+    <div class="card">
+      <h3><i class="fa fa-signal"></i><span id="service2Title">Isi Pulsa & Paket Data</span></h3>
+      <p id="service2Desc">Support semua operator dengan harga ramah di kantong.</p>
+    </div>
+    <div class="card">
+      <h3><i class="fa fa-gamepad"></i><span id="service3Title">Top Up Game</span></h3>
+      <p id="service3Desc">Mobile Legends, Free Fire, PUBG, Genshin Impact, dan banyak lagi.</p>
+    </div>
+    <div class="card">
+      <h3><i class="fa fa-star"></i><span id="service4Title">Akun Premium</span></h3>
+      <p id="service4Desc">Akun Spotify, Netflix, Canva, dan lainnya dengan harga terbaik.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>&copy; 2025 Confortevole e di Qualità - curated by Zhiem | WhatsApp: +6288246306711 | Instagram: @Zhestore</p>
+  </footer>
+
+  <!-- Language Script -->
+  <script>
+    const translations = {
+      id: {
+        navServices: "Layanan",
+        navContact: "Kontak",
+        heroTitle: "Jasa Digital Murah & Berkualitas",
+        heroDesc: "Top Up E-Wallet, Pulsa, Game Mobile, dan Akun Premium | curated by Zhiem",
+        ctaButton: "Pesan via WhatsApp",
+        service1Title: "Top Up E-Wallet",
+        service1Desc: "Dapatkan saldo GoPay, OVO, Dana, dan lainnya dengan harga bersaing.",
+        service2Title: "Isi Pulsa & Paket Data",
+        service2Desc: "Support semua operator dengan harga ramah di kantong.",
+        service3Title: "Top Up Game",
+        service3Desc: "Mobile Legends, Free Fire, PUBG, Genshin Impact, dan banyak lagi.",
+        service4Title: "Akun Premium",
+        service4Desc: "Akun Spotify, Netflix, Canva, dan lainnya dengan harga terbaik.",
+      },
+      en: {
+        navServices: "Services",
+        navContact: "Contact",
+        heroTitle: "Affordable & Quality Digital Services",
+        heroDesc: "Top up E-Wallets, Mobile Credit, Games, and Premium Accounts | curated by Zhiem",
+        ctaButton: "Order via WhatsApp",
+        service1Title: "E-Wallet Top-Up",
+        service1Desc: "Get GoPay, OVO, Dana balance and more at competitive prices.",
+        service2Title: "Phone Credit & Data",
+        service2Desc: "Supports all carriers with affordable rates.",
+        service3Title: "Game Top-Up",
+        service3Desc: "Mobile Legends, Free Fire, PUBG, Genshin Impact, and more.",
+        service4Title: "Premium Accounts",
+        service4Desc: "Spotify, Netflix, Canva accounts and more at the best prices.",
+      },
+      fr: { /* ... */ },
+      es: { /* ... */ },
+      de: { /* ... */ }
+    };
+
+    const langSelect = document.getElementById("languageSelect");
+
+    function applyTranslations(lang) {
+      const t = translations[lang];
+      for (let key in t) {
+        const el = document.getElementById(key);
+        if (el) el.textContent = t[key];
+      }
+    }
+
+    langSelect.addEventListener("change", function () {
+      const selectedLang = this.value;
+      localStorage.setItem("preferredLanguage", selectedLang);
+      applyTranslations(selectedLang);
+    });
+
+    window.addEventListener("DOMContentLoaded", () => {
+      const savedLang = localStorage.getItem("preferredLanguage") || "id";
+      langSelect.value = savedLang;
+      applyTranslations(savedLang);
+    });
+  </script>
+</body>
+</html>
